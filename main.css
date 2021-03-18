@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+.container-main-page {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.sidebar {
+  border: 1px solid black;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.main-column {
+  border: 1px solid black;
+  width: auto;
+  height: 300px;
+  text-align: center;
+}
+
+.contact {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  width: 80vw;
+  justify-content: center;
+  
+}
+
+.form-title {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.alert {
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	background: #79c879;
+	color: white;
+	margin-bottom: 10px;
+	display: none;
+	width: 100vw;
+}
+#name, #email, #message {
+  width: 80vw;
+  padding: 10px;
+}
