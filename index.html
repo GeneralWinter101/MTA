@@ -12,94 +12,197 @@
       charset="UTF-8"
     ></script>
 
-    <title>MTA assignment 1</title>
+    <title class="ang">MTA assignment 2</title>
+    <title class="pol">MTA zadanie 2</title>
   </head>
   <body>
-    <h1>Header</h1>
-    <div class="container-main-page">
-      <div class="sidebar">
-        Column 1/Sidebar
-        <script
-          type="text/javascript"
-          charset="utf-8"
-          src="https://secure.polldaddy.com/p/10777138.js"
-        ></script>
-        <noscript>
-          <a href="https://poll.fm/10777138">This is a poll.</a></noscript
-        >
+    <button class="lang-toggle" onclick="handleClick()">PL/EN</button>
+    <div class="ang">
+      <h1>Header</h1>
+      <div class="container-main-page">
+        <div class="sidebar">
+          Column 1/Sidebar
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            src="https://secure.polldaddy.com/p/10777138.js"
+          ></script>
+          <noscript>
+            <a href="https://poll.fm/10777138">This is a poll.</a></noscript>
+        </div>
+        <div class="main-column">
+          Column 2/Main
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            eaque est eum obcaecati, sequi omnis hic, animi voluptas vitae
+            dolorem doloribus sit nam. Facilis, sit quaerat quia cum eum porro!
+            Aliquam, inventore accusamus in corrupti excepturi maxime illo a
+            dolore quasi expedita tempora esse laborum harum quibusdam hic
+            explicabo alias atque, cupiditate quod assumenda voluptate
+            doloremque. Dolorum quae officia dicta. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ea unde velit placeat asperiores,
+            nobis eum molestias in quidem, cupiditate maxime veritatis cumque
+            similique corrupti molestiae fugiat soluta sunt doloribus nisi.
+            Quidem, non eveniet. Voluptas quibusdam provident distinctio, ea
+            quas impedit veritatis molestias repellat possimus nemo error vitae
+            saepe iusto aliquam perferendis laboriosam accusantium consequatur?
+            Cupiditate quam quia debitis quidem labore? Harum maxime eveniet
+            labore aperiam, pariatur quaerat? Voluptate eveniet odio dignissimos
+            officia, temporibus aspernatur, libero nemo iste voluptatem hic
+            voluptates ducimus unde perferendis? Porro dicta et, fuga magnam
+            repudiandae voluptatibus?
+          </p>
+        </div>
+        <div class="sidebar">
+          Column 3/Sidebar with widgets
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="alice@mystore.com" />
+
+            <!-- Specify a Subscribe button. -->
+            <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+            <!-- Identify the subscription. -->
+            <input
+              type="hidden"
+              name="item_name"
+              value="Alice's Weekly Digest"
+            />
+            <input type="hidden" name="item_number" value="DIG Weekly" />
+
+            <!-- Set the terms of the regular subscription. -->
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="a3" value="5.00" />
+            <input type="hidden" name="p3" value="1" />
+            <input type="hidden" name="t3" value="M" />
+
+            <!-- Set recurring payments until canceled. -->
+            <input type="hidden" name="src" value="1" />
+
+            <!-- Display the payment button. -->
+            <input
+              type="image"
+              name="submit"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif"
+              alt="Subscribe"
+            />
+            <img
+              alt=""
+              width="1"
+              height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+            />
+          </form>
+          <div>another widget</div>
+          <div>another widget</div>
+        </div>
       </div>
-      <div class="main-column">
-        Column 2/Main
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque
-          est eum obcaecati, sequi omnis hic, animi voluptas vitae dolorem
-          doloribus sit nam. Facilis, sit quaerat quia cum eum porro! Aliquam,
-          inventore accusamus in corrupti excepturi maxime illo a dolore quasi
-          expedita tempora esse laborum harum quibusdam hic explicabo alias
-          atque, cupiditate quod assumenda voluptate doloremque. Dolorum quae
-          officia dicta. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ea unde velit placeat asperiores, nobis eum molestias in quidem,
-          cupiditate maxime veritatis cumque similique corrupti molestiae fugiat
-          soluta sunt doloribus nisi. Quidem, non eveniet. Voluptas quibusdam
-          provident distinctio, ea quas impedit veritatis molestias repellat
-          possimus nemo error vitae saepe iusto aliquam perferendis laboriosam
-          accusantium consequatur? Cupiditate quam quia debitis quidem labore?
-          Harum maxime eveniet labore aperiam, pariatur quaerat? Voluptate
-          eveniet odio dignissimos officia, temporibus aspernatur, libero nemo
-          iste voluptatem hic voluptates ducimus unde perferendis? Porro dicta
-          et, fuga magnam repudiandae voluptatibus?
-        </p>
-      </div>
-      <div class="sidebar">
-        Column 3/Sidebar with widgets
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <!-- Identify your business so that you can collect the payments. -->
-          <input type="hidden" name="business" value="alice@mystore.com" />
-
-          <!-- Specify a Subscribe button. -->
-          <input type="hidden" name="cmd" value="_xclick-subscriptions" />
-          <!-- Identify the subscription. -->
-          <input type="hidden" name="item_name" value="Alice's Weekly Digest" />
-          <input type="hidden" name="item_number" value="DIG Weekly" />
-
-          <!-- Set the terms of the regular subscription. -->
-          <input type="hidden" name="currency_code" value="USD" />
-          <input type="hidden" name="a3" value="5.00" />
-          <input type="hidden" name="p3" value="1" />
-          <input type="hidden" name="t3" value="M" />
-
-          <!-- Set recurring payments until canceled. -->
-          <input type="hidden" name="src" value="1" />
-
-          <!-- Display the payment button. -->
-          <input
-            type="image"
-            name="submit"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif"
-            alt="Subscribe"
-          />
-          <img
-            alt=""
-            width="1"
-            height="1"
-            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-          />
-        </form>
-        <div>another widget</div>
-        <div>another widget</div>
-      </div>
+      <div class="form-title">Contact form</div>
+      <div class="alert">Your message has been sent</div>
+      <form class="contact" id="contactForm">
+        <label>Name</label>
+        <input type="name" placeholder="Name" id="name" />
+        <label>Email</label>
+        <input type="email" placeholder="Email" id="email" />
+        <label>Message</label>
+        <textarea placeholder="Type your message here" id="message"></textarea>
+        <button type="submit">Submit form</button>
+      </form>
     </div>
-    <div class="form-title">Contact form</div>
-    <div class="alert">Your message has been sent</div>
-    <form class="contact" id="contactForm">
-      <label>Name</label>
-      <input type="name" placeholder="Name" id="name" />
-      <label>Email</label>
-      <input type="email" placeholder="Email" id="email" />
-      <label>Message</label>
-      <textarea placeholder="Type your message here" id="message"></textarea>
-      <button type="submit">Submit form</button>
-    </form>
+    <div class="pol">
+      <h1>Nagłówek</h1>
+      <div class="container-main-page">
+        <div class="sidebar">
+          Kolumna 1/boczna
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            src="https://secure.polldaddy.com/p/10777138.js"
+          ></script>
+          <noscript>
+            <a href="https://poll.fm/10777138">This is a poll.</a></noscript
+          >
+        </div>
+        <div class="main-column">
+          Kolumna 2/główna
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            eaque est eum obcaecati, sequi omnis hic, animi voluptas vitae
+            dolorem doloribus sit nam. Facilis, sit quaerat quia cum eum porro!
+            Aliquam, inventore accusamus in corrupti excepturi maxime illo a
+            dolore quasi expedita tempora esse laborum harum quibusdam hic
+            explicabo alias atque, cupiditate quod assumenda voluptate
+            doloremque. Dolorum quae officia dicta. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ea unde velit placeat asperiores,
+            nobis eum molestias in quidem, cupiditate maxime veritatis cumque
+            similique corrupti molestiae fugiat soluta sunt doloribus nisi.
+            Quidem, non eveniet. Voluptas quibusdam provident distinctio, ea
+            quas impedit veritatis molestias repellat possimus nemo error vitae
+            saepe iusto aliquam perferendis laboriosam accusantium consequatur?
+            Cupiditate quam quia debitis quidem labore? Harum maxime eveniet
+            labore aperiam, pariatur quaerat? Voluptate eveniet odio dignissimos
+            officia, temporibus aspernatur, libero nemo iste voluptatem hic
+            voluptates ducimus unde perferendis? Porro dicta et, fuga magnam
+            repudiandae voluptatibus?
+          </p>
+        </div>
+        <div class="sidebar">
+          Kolumna 3/boczna z innymi widgetami
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="alice@mystore.com" />
+
+            <!-- Specify a Subscribe button. -->
+            <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+            <!-- Identify the subscription. -->
+            <input
+              type="hidden"
+              name="item_name"
+              value="Alice's Weekly Digest"
+            />
+            <input type="hidden" name="item_number" value="DIG Weekly" />
+
+            <!-- Set the terms of the regular subscription. -->
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="a3" value="5.00" />
+            <input type="hidden" name="p3" value="1" />
+            <input type="hidden" name="t3" value="M" />
+
+            <!-- Set recurring payments until canceled. -->
+            <input type="hidden" name="src" value="1" />
+
+            <!-- Display the payment button. -->
+            <input
+              type="image"
+              name="submit"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif"
+              alt="Subscribe"
+            />
+            <img
+              alt=""
+              width="1"
+              height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+            />
+          </form>
+          <div>kolejny widget</div>
+          <div>kolejny widget</div>
+        </div>
+      </div>
+      <div class="form-title">Formularz kontaktowy</div>
+      <div class="alert">Twoja wiadomość została wysłana</div>
+      <form class="contact" id="contactForm">
+        <label>Imię</label>
+        <input type="name" placeholder="Imię" id="name" />
+        <label>Email</label>
+        <input type="email" placeholder="Email" id="email" />
+        <label>Wiadomość</label>
+        <textarea
+          placeholder="Tu wpisz swoją wiadomość"
+          id="message"
+        ></textarea>
+        <button type="submit">Wyślij formularz</button>
+      </form>
+    </div>
   </body>
 
   <script defer src="./main.js"></script>

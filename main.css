@@ -1,3 +1,10 @@
+.lang-toggle {
+  border: none;
+  padding: 10px;
+  color: white;
+  background: green;
+}
+
 h1 {
   text-align: center;
   margin: 20px;
@@ -15,12 +22,13 @@ h1 {
   height: auto;
   text-align: center;
   margin: 0 10px;
+  justify-self: right;
 }
 
 .main-column {
   border: 1px solid black;
   width: auto;
-  height: 300px;
+  min-height: 500px;
   text-align: center;
 }
 
@@ -30,26 +38,35 @@ h1 {
   margin: 0 auto;
   width: 80vw;
   justify-content: center;
-  
 }
 
 .form-title {
-	text-align: center;
-	font-size: 30px;
-	margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .alert {
-	justify-content: center;
-	text-align: center;
-	padding: 10px;
-	background: #79c879;
-	color: white;
-	margin-bottom: 10px;
-	display: none;
-	width: 100vw;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+  width: 100vw;
 }
-#name, #email, #message {
+#name,
+#email,
+#message {
   width: 80vw;
   padding: 10px;
+}
+
+.pol {
+  display: none;
+}
+
+.ang {
+  display: block;
 }
